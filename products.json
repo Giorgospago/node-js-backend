@@ -1,0 +1,35 @@
+[
+  {
+    "_id": 1,
+    "name": "Core i3",
+    "price": 300,
+    "category": "pc-parts",
+    "sale": 250
+
+  },
+  {
+    "_id": 2,
+    "name": "Core i5",
+    "price": 500,
+    "category": "pc-parts",
+    "sale": 450
+
+
+  },
+  {
+    "_id": 3,
+    "name": "Core i7",
+    "price": 700,
+    "category": "pc-parts"
+
+  },
+  {
+    "_id": 4,
+    "name": "Core i9",
+    "price": 900,
+    "category": "pc-parts"
+
+  }
+
+
+]
