@@ -1,8 +1,13 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const products = require("./products.json");
+require('dotenv').config();
 
-app.listen(3000); // se poia porta tha akouei
+app.listen(process.env.HTTP_PORT); // se poia porta tha akouei
+
+app.use(cors());
+
 
 app.get("/",(req,res)=>{ // req = request , res = response
     res.sendFile(__dirname + "/views/home.html");
@@ -20,8 +25,8 @@ app.get("/product/:productId",(req,res)=>{
         }
 
     }
-    //res.json(productFound);
-    res.send(productFound.name);
+    res.json(productFound);
+    // res.send(productFound.name);
 
 });
 
